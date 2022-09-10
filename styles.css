@@ -1,0 +1,130 @@
+:root {
+  --clr-primary-card-1-bg: hsl(31, 77%, 52%);
+  --clr-primary-card-2-bg: hsl(184, 100%, 22%);
+  --clr-primary-card-3-bg: hsl(179, 100%, 13%);
+
+  --clr-neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-light-gray: hsl(0, 0%, 95%);
+
+  --ff-primary: 'Lexend Deca', sans-serif;
+  --ff-secondary: 'Big Shoulders Display', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --container-width: 32.5rem;
+  --container-height: 132rem;
+  
+  --column-width: var(--container-width);
+  --column-height: 44rem;
+
+  --column-padding: 5rem;
+
+  --fs-header: 4rem;
+  --fs-desc: 1.5rem;
+  --fs-button: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--clr-light-gray);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  font-family: var(--ff-primary);
+
+  margin: 0;
+}
+
+.container {
+  height: var(--container-height);
+  width: var(--container-width);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 10rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.column {
+  width: var(--column-width);
+  height: var(--column-height);
+
+  margin: 0;
+  padding: var(--column-padding);
+
+  flex-shrink: 0;
+}
+
+.card1 {
+  --column-clr: var(--clr-primary-card-1-bg);
+  background-color: var(--column-clr);
+}
+
+.card2 {
+  --column-clr: var(--clr-primary-card-2-bg);
+  background-color: var(--column-clr);
+}
+
+.card3 {
+  --column-clr: var(--clr-primary-card-3-bg);
+  background-color: var(--column-clr);
+}
+
+.header {
+  color: var(--clr-light-gray);
+  font-size: var(--fs-header);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+
+  padding: 2rem 0;
+}
+
+.description {
+  color: var(--clr-neutral-transparent-white);
+  font-size: var(--fs-desc);
+  font-weight: var(--fw-regular);
+  line-height: 1.75;
+}
+
+.button {
+  color: var(--column-clr);
+  background-color: var(--clr-light-gray);
+
+  height: 5rem;
+  width: 14.5rem;
+
+  border: 0.5rem;
+  border-radius: 5rem;
+
+  font-size: var(--fs-button);
+  font-weight: var(--fw-regular);
+
+  margin-top: 2.5rem;
+}
+
+
+.attribution {
+  text-align: center;
+  margin: auto 0 10px 0;
+  font-size: 2.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--clr-primary-card-2-bg);
+}
