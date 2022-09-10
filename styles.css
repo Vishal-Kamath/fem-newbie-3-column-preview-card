@@ -105,19 +105,27 @@ body {
 }
 
 .button {
+  cursor: pointer;
   color: var(--column-clr);
   background-color: var(--clr-light-gray);
 
   height: 5rem;
   width: 14.5rem;
 
-  border: 0.5rem;
+  border: 0.25rem solid var(--clr-light-gray);
   border-radius: 5rem;
 
   font-size: var(--fs-button);
   font-weight: var(--fw-regular);
 
   margin-top: var(--button-margin-top);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color: var(--clr-light-gray);
+    background-color: var(--column-clr);
+  }
 }
 
 @media (min-width: 60rem) {
