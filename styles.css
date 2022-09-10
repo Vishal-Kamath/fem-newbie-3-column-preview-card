@@ -23,6 +23,9 @@
   --fs-header: 4rem;
   --fs-desc: 1.5rem;
   --fs-button: 1.5rem;
+
+  --header-margin: 2rem 0;
+  --button-margin-top: 2.5rem;
 }
 
 * {
@@ -91,7 +94,7 @@ body {
   font-family: var(--ff-secondary);
   font-weight: var(--fw-bold);
 
-  padding: 2rem 0;
+  margin: var(--header-margin);
 }
 
 .description {
@@ -114,7 +117,30 @@ body {
   font-size: var(--fs-button);
   font-weight: var(--fw-regular);
 
-  margin-top: 2.5rem;
+  margin-top: var(--button-margin-top);
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --container-width: 91.8rem;
+    --container-height: 50rem;
+    
+    --column-width: 30.6rem;
+    --column-height: var(--container-height);
+
+    --column-padding: 5rem;
+
+    --fs-header: 4rem;
+    --fs-desc: 1.5rem;
+    --fs-button: 1.5rem;
+
+    --header-margin: 2.5rem 0;
+    --button-margin-top: 7.5rem;
+  }
+
+  .container {
+    flex-direction: row;
+  }
 }
 
 
